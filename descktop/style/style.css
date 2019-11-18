@@ -231,34 +231,84 @@ footer {
     line-height: 35px;
 }
 
+
+
 .header_menu__burger {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid gray;
-    border-radius: 15px;
+    display: none;
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
     padding: 5px;
+    position: relative;
+    background-color: #5094f2;
+
+}
+.header_menu__burger span,
+.header_menu__burger span::before,
+.header_menu__burger span::after{
+    position:absolute;
+    width: 35px;
+    height: 5px;
+    background-color: white;
 
 }
 
+.header_menu__burger span {
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
+.header_menu__burger span::before {
+    content:'';
+    transform: translateY(-10px);
+}
+
+.header_menu__burger span::after {
+    content:'';
+    transform: translateY(10px);
+}
 
 
 @media screen and (max-width: 640px) {
-    .main_info__block1 {
-        display: block;
-
-        margin-top: 60px;
+    .wrapper{
+        width: 100%;
+        min-width: 600px;
+    }
+    .header_menu {
+        display: none;
+    }
+    .header_menu__burger {
+        display:block;
     }
 
+    .main_block {
+        width: 100%;
+    }
+    .main_info__block1 {
+        display: block;
+        margin-top: 60px;
+    }
+    .main_info{
+        width:100%;
+
+
+    }
+    .main_info__list {
+        margin-left: 30px;
+    }
     .main_info__block2 {
         display: flex;
         flex-direction: column;
         margin-top: 100px;
     }
+    .main_info__box {
+        margin-right: 30px;
+
+    }
 
     .main_info__block1-item {
-        width: 100%;
+        width: auto;
         display:flex;
         flex-direction: row;
         align-items: flex-start;
@@ -268,15 +318,31 @@ footer {
         padding: 50px;
 
     }
-
-    .main_info {
+    .main_slider {
         width: 100%;
-        margin: 0 auto;
+        height: auto;
+        padding: 20px;
+    }
+    .main_slider__img img{
+        width: 100%;
+
+    }
+    .main_slider__text {
+        width: 100%;
+    }
+    .header_logo {
+        margin-left: 0px;
     }
 
-    .main_info__list-title {
-        font-size: 10vw;
-        margin-bottom: 20px;
+    .header_menu__burger {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        padding: 20px;
+    }
+    .main_slider_arrows {
+        display: none;
     }
 
 
