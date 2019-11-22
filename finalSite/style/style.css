@@ -257,6 +257,10 @@ a {
   .secondBlockSubtitle__item {
     text-align: center;
     width: 350px; }
+    .secondBlockSubtitle__item img {
+      height: 70px; }
+  .secondBlockSubtitle__item-mar {
+    margin: 0 15px 0 15px; }
   @media screen and (max-width: 660px) {
     .secondBlockSubtitle {
       -webkit-box-orient: vertical;
