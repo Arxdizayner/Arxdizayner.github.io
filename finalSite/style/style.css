@@ -25,7 +25,7 @@ a {
   background: beige; }
 
 .blockContent {
-  margin: 0 5%; }
+  padding: 0 5%; }
 
 /* FIRST BLOCK*/
 .firstBlock {
@@ -233,7 +233,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%; }
+  width: 100%;
+  padding: 5%; }
   @media screen and (max-width: 400px) {
     .blockContent-second {
       width: 100%;

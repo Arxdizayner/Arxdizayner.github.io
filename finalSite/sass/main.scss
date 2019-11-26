@@ -31,7 +31,7 @@ a {
 }
 
 .blockContent {
-  margin: 0 5%;
+  padding: 0 5%;
 
 
 }
@@ -228,6 +228,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 5%;
   @media screen and (max-width: 400px) {
     width: 100%;
     margin:0;
